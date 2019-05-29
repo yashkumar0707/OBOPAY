@@ -1,6 +1,5 @@
 package yash;
 import java.util.*;
-import java.io.*;
 public class queen 
 {
 	    int n;// chessboard
