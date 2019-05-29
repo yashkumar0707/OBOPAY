@@ -1,7 +1,5 @@
 package yash;
 import java.util.*;
-import java.io.*;
-import java.sql.*;
 
 public class queen 
 {
