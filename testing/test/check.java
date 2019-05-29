@@ -1,5 +1,5 @@
-package test;
-im-port java.io.*;
+package test ;
+import java.io.*;
 public class check {
 	public static void main(String args[])
 	{
