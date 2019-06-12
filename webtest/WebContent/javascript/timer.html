@@ -10,7 +10,7 @@
 	var id=0; var sec=0;
 	function print()
 	{
-		document.write(sec + " seconds");
+		document.getElementById("op").innerHTML=sec+" seconds";
 		sec++;
 	}
 	function start()
@@ -23,7 +23,7 @@
 	}
 	</script>
 	<button onclick="start()">Start</button><br/>
-	<h1>TIMER</h1>
+	<h1 id="op">TIMER</h1>
 	<button onclick="stop()">Stop</button><br/>
 </body>
 </html>
