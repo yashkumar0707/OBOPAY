@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type ="text/javascript">
+	 function fn()
+	 {
+		 var rd1= document.getElementById("rd1");
+		 var rd2=document.getElementById("rd2");
+		 if(rd1.checked==true)
+			 alert(rd1.value+" is selected");
+		 if(rd2.checked==true)
+			 alert(rd2.value+ " id selected")
+			else
+				alert("none selected");
+	 }
+	</script>
+	<input type="radio" name="grp1" value="java" id="rd1">java</input><br/>
+	<input type="radio" name="grp1" value="c++" id="rd2">c++</input><br/>
+	<button onclick="fn()" id="btn">CLICK ME</button>
+</body>
+</html>

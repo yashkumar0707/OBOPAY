@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TEXTBOX</title>
+</head>
+<body>
+<script type="text/javascript">
+	function fn()
+	{
+		var str=document.getElementById("txt1").value;
+		if(str=="yash")
+		{
+			alert("LOGIN SUCCESSFUL");
+		}
+		else
+			alert("INCORRECT CREDENTIALS");
+	}
+</script>
+<input id="txt" placeholder="enter username">
+<br/>
+<input type="password" id="txt1" placeholder="enter password">
+<br/>
+<button onclick="fn()" id="btn">CLICK ME</button>
+</body>
+</html>

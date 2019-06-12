@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TEXTBOX</title>
+</head>
+<body>
+<script type="text/javascript">
+	function fn()
+	{
+		var str2=document.getElementById("txt");
+		var str1=document.getElementById("txt1");
+		var regx=/([a-zA-Z0-9\.-]+)@([a-zA-Z]+).([a-zA-Z]+)/;
+		if((str2.value).trim()=="" || (str1.value).trim()=="")
+		{
+			alert("NO BLANK ALLOWED");
+			str2.style.border="solid 3px red";
+			return false;	
+	
+		}
+		else if (regx.test(str2.value)==false)
+			{
+				alert("INAVLID USERNAME")
+				return false;
+			}
+		else
+			return true;
+	}
+
+</script>
+<form onsubmit="return fn();" 
+	action="form2.html">
+<input id="txt" placeholder="enter username" >
+<br/>
+<input type="password" id="txt1" placeholder="enter password">
+<br/>
+<button type="submit">submit</button>
+</form>
+</body>
+</html>
