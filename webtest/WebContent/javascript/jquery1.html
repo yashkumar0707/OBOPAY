@@ -1,0 +1,25 @@
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SELECTORS OF JQUERY</title>	
+<link rel="stylesheet" href=jquery1.css>
+</head>
+<body>
+<script src="jquery.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function()
+	{
+	$("button").click(fn1);
+	function fn1()
+	{
+		$(".second").fadeToggle();
+	}
+	})
+</script>
+<h1 id="first">SELECTORS 1</h1>
+<h1 class="second">SELCTORS 2</h1>
+<h1 class="second">SELCTORS 3</h1>
+<button>CLICK</button>
+</body>
+</html>
