@@ -6,7 +6,24 @@
 </head>
 <body>
 <h1>AJAX</h1>
-<button id="btn">ENTER FOR INFO</button>
-<script src="ajax.js"></script>
+<div id="txt"></div>
+<button id="btn">CLICK ME</button>
+<script type="text/javascript">
+	document.getElementById("btn").addEventListener('click',loadtext);
+	function loadtext()
+	{
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET',"ajax.txt",true);
+		xhr.onload=function()
+		{
+			if(this.status==200)
+				{
+					console.log(this.responseText);
+					document.getElementById("txt").innerHTML=this.responseText;
+				}
+		}
+		xhr.send();
+	}
+</script>
 </body>
 </html>
