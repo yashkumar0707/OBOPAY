@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>FORM2</title>
+</head>
+<body>
+<script type="text/javascript">
+function fn()
+	{
+		var str2=document.getElementById("txt");
+		var str1=document.getElementById("txt1");
+		var regx=/([a-zA-Z0-9\.-]+)@([a-zA-Z]+).([a-zA-Z]+)/;
+		if((str2.value).trim()=="")
+		{
+			alert("NO BLANK ALLOWED");
+			str2.style.border="solid 3px red";
+			return false;	
+	
+		}
+		else if((str1.value).trim()=="")
+		{
+			alert("NO BLANK ALLOWED");
+			str1.style.border="solid 3px red";
+			return false;	
+	
+		}
+		else if (regx.test(str2.value)==false)
+			{
+				alert("INAVLID USERNAME")
+				return false;
+			}
+		else
+			return true;
+	}
+</script>
+<h1 id="txt2"></h1>
+</body>
+</html>
