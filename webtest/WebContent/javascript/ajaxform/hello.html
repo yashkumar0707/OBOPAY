@@ -10,12 +10,15 @@
 <script type="text/javascript">
 $(document).ready(function()
 {
-	$('#btn').click(function()
+	$('#name').add('#pass').keypress(function()
 	{
 		var name=$('#name').val();	
+		var pass=$('#pass').val();
 		$.ajax({
 			type:'post',
-			data:{name:name},
+			data:{name:name,
+					pass:pass	
+			},
 			url:'hello2.jsp',
 			success:function(result)
 			{
@@ -24,12 +27,13 @@ $(document).ready(function()
 		});
 	});	
 });
+	
 </script>
-<form>
-NAME:<input type="text" id="name"><br/>
-<input type="button" id="btn" value="display">
+<form action="hello3.jsp">
+USERNAME:<input type="text" id="name" name="name"><br/>
+PASSWORD:<input type="password" id="pass" name="pass"><br/>
 <span id="result"></span>
-
+<button type="submit">submit</button>
 </form>
 </body>
 </html>

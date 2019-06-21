@@ -7,6 +7,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-<% out.print(request.getParameter("name")); %>
+<% String name=request.getParameter("name");
+	String pass=(request.getParameter("pass"));
+	if(name.trim().equals(""))
+	{
+		out.print("NO BLANK ALLOWED");
+	}
+	else if((pass).trim().equals(""))
+	{
+		out.print("NO BLANK ALLOWED");
+	}
+	else
+		{String s=web.hello3.check(name);
+		out.print(s);
+		}
+%>
+
 </body>
 </html>
