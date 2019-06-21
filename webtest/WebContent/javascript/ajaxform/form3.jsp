@@ -7,20 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%=%>
-<% 	
-	String str2= request.getParameter("id") ;
-	out.print(str2);
-	out.print("NO BLANK ALLOWED");		
-	out.print("NO BLANK ALLOWED");
-//else if (regx.test(str2)==false)
-	//{
-		//document.getElementById("txt3").innerHTML="INCORRECT USERNMAE";
-		 
-		 //}*/aaaa
-		
-		 %>
-		 
+		 <% out.print(request.getParameter("txt")); %>
 		
 </body>
 </html>

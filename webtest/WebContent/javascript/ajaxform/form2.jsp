@@ -17,15 +17,11 @@ function fn()
 		{
 			document.getElementById("txt3").innerHTML="NO BLANK ALLOWED";
 			
-				
-	
 		}
 		else if((str1).trim()=="")
 		{
 			document.getElementById("txt3").innerHTML="NO BLANK ALLOWED";
 		
-				
-	
 		}
 		else if (regx.test(str2)==false)
 			{
