@@ -10,7 +10,7 @@
 <script type="text/javascript">
 $(document).ready(function()
 {
-	$('#name').add('#pass').keypress(function()
+	$('#name').add('#pass').keyup(function()
 	{
 		var name=$('#name').val();	
 		var pass=$('#pass').val();
@@ -29,11 +29,30 @@ $(document).ready(function()
 });
 	
 </script>
-<form action="hello3.jsp">
+<form onsubmit="return fn();" 
+	action="hello3.jsp">
 USERNAME:<input type="text" id="name" name="name"><br/>
 PASSWORD:<input type="password" id="pass" name="pass"><br/>
-<span id="result"></span>
+<span id="result" ></span>
 <button type="submit">submit</button>
 </form>
+<script type="text/javascript">
+ function fn()
+ {//alert("yash aysjh");
+	 var str2=document.getElementById("result").innerText;
+	// alert(str2);
+	 if(str2.trim()=="username not available")
+		 {
+		 	alert(str2);
+		 	return false;
+		 }
+	 else 
+		 {
+			return true;
+		 }
+	 
+	 return false; 
+ }
+</script>
 </body>
 </html>

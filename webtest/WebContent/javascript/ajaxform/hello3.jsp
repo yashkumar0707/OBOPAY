@@ -8,7 +8,7 @@
 </head>
 <body>
 DONE:
-<% 
+<% 	
 	out.print(request.getParameter("name") +"<br/>");
 	out.print(web.insertajax.Insert(request.getParameter("name"),request.getParameter("pass")));
 %>
