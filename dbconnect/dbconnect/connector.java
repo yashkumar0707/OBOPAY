@@ -1,7 +1,5 @@
 package dbconnect;
-
 import java.sql.*;
-
 public class connector
 {	
 	public Connection get()

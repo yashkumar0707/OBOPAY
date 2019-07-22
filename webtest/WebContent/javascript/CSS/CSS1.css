@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+body{
+	background-color:grey;
+	color:blue;
+}
+p{
+	color:brown;
+	font-family Helvetica;
+	font-size:12px;
+	font-weight:normal; 
+	line-height:1.6em;
+	margin:0;
+}
+.box-1{
+	background-color:orange;
+}
