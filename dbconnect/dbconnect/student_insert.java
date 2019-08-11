@@ -14,8 +14,7 @@ public class student_insert
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int id = sc.nextInt(); 
 		String s= br.readLine();
-		Statement st=con.createStatement();
-		
+		Statement st=con.createStatement();	
 		String sql1="INSERT INTO STUDENTS "
 				+"VALUES ("+id+","+"'"+s+"')";
 		c++;
